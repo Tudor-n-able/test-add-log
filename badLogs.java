@@ -17,10 +17,7 @@ public class Test {
         logger.info(String.format("Log message info: orderstatus={%s}, errorcode={%d}, user={%s}, transactionid={%d}", orderstatus, errorcode, user, transactionId));
     }
 
-    void myNewFunc() {
-log.error("Newly addes error");
-}
-
+  
     void myFunc1() {
         Logger localLogger = (Logger) LoggerFactory.getLogger(Slf4j.class);
         localLogger.error(String.format("Log message error: orderstatus={%s}, errorcode={%d}, user={%s}, transactionid={%d}",
